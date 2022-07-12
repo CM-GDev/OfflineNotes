@@ -15,19 +15,18 @@ const initdb = async () =>
 // TODO: Add logic to a method that accepts some content and adds it to the database
 // Exporting a function that will ADD content to the database.
 export const putDb = async (content) => {
-  console.error('Saving your text/note');
-
+  
   // Create a connection to the database database and version we want to use.
-  const TextNoteDB = await openDB('jate', 1);
+  const textNoteDB = await openDB('jate', 1);
 
   // Create a new transaction and specify the database and data privileges.
-  const tx = TextNoteDB.transaction('jate', 'readwrite');
+  const tx = textNoteDB.transaction('jate', 'readwrite');
 
   // Open up the desired object store.
   const store = tx.objectStore('jate');
 
   // Use the .add() method on the store and pass in the content.
-  const request = store.add({ note: content });
+  const request = store.put({ note: content });
 
   // Get confirmation of the request.
   const result = await request;
@@ -40,10 +39,10 @@ export const getDb = async () => {
   console.log('GET all from the database');
 
   // Create a connection to the database database and version we want to use.
-  const TextNoteDB = await openDB('jate', 1);
+  const textNoteDB = await openDB('jate', 1);
 
   // Create a new transaction and specify the database and data privileges.
-  const tx = TextNoteDB.transaction('jate', 'readonly');
+  const tx = textNoteDB.transaction('jate', 'readonly');
 
   // Open up the desired object store.
   const store = tx.objectStore('jate');
