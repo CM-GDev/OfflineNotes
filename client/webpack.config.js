@@ -39,7 +39,7 @@ module.exports = () => {
         description: 'A text editor and an application for creating notes with or without an internet connection',
         background_color: '#225ca3',
         theme_color: '#225ca3',
-        id: './', 
+        // id: '/', 
         start_url: './',
         publicPath: './', 
         icons: [
