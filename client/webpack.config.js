@@ -34,9 +34,9 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Offline Notes',
+        name: 'Going Offline',
         short_name: 'JATE',
-        description: 'An application for creating notes with or without an internet connection',
+        description: 'A text editor or an application for creating notes with or without an internet connection',
         background_color: '#225ca3',
         theme_color: '#225ca3',
         id: './', 
