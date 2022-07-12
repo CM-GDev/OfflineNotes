@@ -1,5 +1,5 @@
 {
-  "name": "JATE-OfflineNotes",
+  "name": "jate-offlinenotes",
   "version": "1.0.0",
   "description": "An application for creating notes with or without an internet connection",
   "main": "server.js",
