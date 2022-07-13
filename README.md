@@ -32,7 +32,7 @@
   
   ## Usage
   
-  I have also deployed the full-stack application to Heroku, [JATE](https://heroku)   
+  I have also deployed the full-stack application to Heroku, [JATE](https://pure-castle-29867.herokuapp.com/)   
     
   ## Credits
 
